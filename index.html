@@ -5,72 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <h1>About me!</h1>
-    <h2>My famaly!</h2>
-    <h2><mark style="background-color: black; color: aliceblue;">me</mark></h2>
-    <ul>
-        <li><strong>I'm Alina</strong></li>
-        <li><strong>I'm <del>11</del> 12 years old</strong></li>
-        <li><strong>I live in Prague</strong></li>
-    </ul>
-    <h3><mark style="background-color: blue;">My mother</mark></h3>
-    <ul>
-        <li>She likes to knit with beads</li>
-        <li>She works at Pepco</li>
-    </ul>
-    <h3><mark style="background-color: rgb(255, 0, 0);">My father</mark></h3>
-    <ul>
-        <li>he likes cars</li>
-        <li>he works in the IT sector</li>
-    </ul>
-    <h2><u><mark style="background-color: rgb(93, 148, 34); color: aliceblue;">school</mark></u></h2>
-    <ul>
-        <li>I'am studying well</li>
-        <li>I don't like school</li>
-    </ul>
-    <h2>sports</h2>
-    <p style="color: black;">I dancing hip hop</p>
-    <h2>My BFF</h2>
 
-    <img src="https://i.pinimg.com/236x/ca/7c/4d/ca7c4dcd4da83fcf7558574a52ed586c.jpg" alt="bff" width="100"
-        height="100">
-    <h2>
-        <em>my BFF</em>
-    </h2>
 
-    <div style="display: flex; align-items: center;">
+
+    <img src="data:image/jpeg;base64,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"
+        alt="planets">
+
+    <p class="planets">Планеты можно поделить на два
+        основных класса: большие,
+        имеющие невысокую плотность
+        планеты-гиганты, и менее крупные
+        землеподобные планеты, имеющие
+        твёрдую поверхность. Согласно
+        определению Международного
+        астрономического союза, в
+        Солнечной системе 8 планет.
+        В порядке удаления от Солнца
+        — четыре землеподобных: Меркурий, Венера, Земля, Марс, затем четыре планеты-гиганта: Юпитер, Сатурн, Уран и
+        Нептун. В Солнечной системе также есть по крайней мере 5 карликовых планет: Плутон (до 2006 года считавшийся
+        девятой планетой), Макемаке,</p>
+
+
+
+
+
+
+    <p class="hello">Планеты можно поделить на два
+        основных класса: большие,
+        имеющие невысокую плотность
+        планеты-гиганты, и менее крупные
+        землеподобные планеты, имеющие
+        твёрдую поверхность. Согласно
+        определению Международного
+        астрономического союза, в
+        Солнечной системе 8 планет.
+        В порядке удаления от Солнца
+       </p>
+
+    <ul>
+        <li class="li"> <a class="link" href="https://www.tiktok.com/">tik tok</a></li>
+        <li class="li"><a class="link" href="mailto:blabla@gmail.com">my gmail</a>l</li>
+        <li class="li"><a class="link" href="tel:+420123123123">tell me</a>
+        </li>
+    </ul>
+
+
+
+
+
+    <!--    
+        <h1>About me!</h1>
+        <h2>My famaly!</h2>
+        <h2><mark style="background-color: black; color: aliceblue;">me</mark></h2>
+        <ul>
+            <li><strong>I'm Alina</strong></li>
+            <li><strong>I'm <del>11</del> 12 years old</strong></li>
+            <li><strong>I live in Prague</strong></li>
+        </ul>
+        <h3><mark style="background-color: blue;">My mother</mark></h3>
+        <ul>
+            <li>She likes to knit with beads</li>
+            <li>She works at Pepco</li>
+        </ul>
+        <h3><mark style="background-color: rgb(255, 0, 0);">My father</mark></h3>
+        <ul>
+            <li>he likes cars</li>
+            <li>he works in the IT sector</li>
+        </ul>
+        <h2><u><mark style="background-color: rgb(93, 148, 34); color: aliceblue;">school</mark></u></h2>
+        <ul>
+            <li>I'am studying well</li>
+            <li>I don't like school</li>
+        </ul>
+        <h2>sports</h2>
+        <p style="color: black;">I dancing hip hop</p>
+        <h2>My BFF</h2>
+
+        <img src="https://i.pinimg.com/236x/ca/7c/4d/ca7c4dcd4da83fcf7558574a52ed586c.jpg" alt="bff" width="100"
+            height="100">
+        <h2>
+            <em>my BFF</em>
+        </h2>
+
+        <div style="display: flex; align-items: center;">
+            <ol>
+                <li>My BFF is Nina </li>
+                <li>she likes winx</li>
+                <li>she likes sushi with banana and Nutella</li>
+                <li>she is 11 years old</li>
+                <li>she was bitten by seaweed</li>
+                <li>she has got one dog(dino)</li>
+                <li>she lives in Prague</li>
+                <li>She likes to draw</li>
+                <li>we always laugh</li>
+                <li>she has got very long hair</li>
+                <li>she likes her dog</li>
+                <li>she likes labubu</li>
+            </ol>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmEcFWMeHXjUETVm3UQIrEs24ybup5rJCiA&s"
+                alt="winx" width="200" height="200">
+
+        </div>
+
+
+
+        <h3>my social network</h3>
         <ol>
-            <li>My BFF is Nina </li>
-            <li>she likes winx</li>
-            <li>she likes sushi with banana and Nutella</li>
-            <li>she is 11 years old</li>
-            <li>she was bitten by seaweed</li>
-            <li>she has got one dog(dino)</li>
-            <li>she lives in Prague</li>
-            <li>She likes to draw</li>
-            <li>we always laugh</li>
-            <li>she has got very long hair</li>
-            <li>she likes her dog</li>
-            <li>she likes labubu</li>
+            <li><a href="https://www.tiktok.com/">tik tok</a></li>
+            <li><a href="mailto:blabla@gmail.com">my gmail</a></li>
+            <li><a href="tel:+420123123123">tell me</a></li>
         </ol>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmEcFWMeHXjUETVm3UQIrEs24ybup5rJCiA&s"
-            alt="winx" width="200" height="200">
-
-    </div>
-
-
-
-    <h3>my social network</h3>
-    <ol>
-        <li><a href="https://www.tiktok.com/">tik tok</a></li>
-        <li><a href="mailto:blabla@gmail.com">my gmail</a></li>
-        <li><a href="tel:+420123123123">tell me</a></li>
-    </ol>
-
+        -->
 </body>
 
 </html>
